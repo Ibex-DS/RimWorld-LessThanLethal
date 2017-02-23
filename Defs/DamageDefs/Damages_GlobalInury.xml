@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DamageDef Name="LocalInjuryBase" Abstract="True">
+	  <workerClass>DamageWorker_AddGlobal</workerClass>
+	</DamageDef>
+
+	<DamageDef ParentName="LocalInjuryBase">
+      <defName>LTL_Tazed</defName>
+      <label>tazed</label>
+      <externalViolence>false</externalViolence>
+      <battleWound>true</battleWound>
+      <deathMessage>{0} has been tazed to death?</deathMessage>
+      <hediff>LTL_Tazed</hediff>
+	  <hediffSkin>LTL_Tazed</hediffSkin>
+	  <hediffSolid>LTL_Tazed</hediffSolid>
+      <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+	  <harmsHealth>false</harmsHealth>
+	  <makesBlood>false</makesBlood>
+    </DamageDef>
+
+	<DamageDef ParentName="LocalInjuryBase">
+      <defName>LTL_TazedShort</defName>
+      <label>tazedshort</label>
+      <externalViolence>false</externalViolence>
+      <battleWound>true</battleWound>
+      <deathMessage>{0} has been tazed to death?</deathMessage>
+      <hediff>LTL_TazedShort</hediff>
+	  <hediffSkin>LTL_TazedShort</hediffSkin>
+	  <hediffSolid>LTL_TazedShort</hediffSolid>
+      <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+	  <harmsHealth>false</harmsHealth>
+	  <makesBlood>false</makesBlood>
+    </DamageDef>
+
+	<DamageDef ParentName="LocalInjuryBase">
+	  <defName>LTL_TearGas</defName>
+	  <label>Tear Gassed</label>
+	  <externalViolence>false</externalViolence>
+	  <battleWound>true</battleWound>
+	  <deathMessage>{0} has been gassed to death?</deathMessage>
+	  <hediff>LTL_TearGassed</hediff>
+	  <hediffSkin>LTL_TearGassed</hediffSkin>
+	  <hediffSolid>LTL_TearGassed</hediffSolid>
+	  <harmAllLayersUntilOutside>false</harmAllLayersUntilOutside>
+	  <harmsHealth>false</harmsHealth>
+	  <makesBlood>false</makesBlood>
+	  <soundExplosion>Explosion_Stun</soundExplosion>
+	</DamageDef>
+
+	<DamageDef ParentName="LocalInjuryBase">
+      <defName>LTL_PoisonDart</defName>
+      <label>Poison Darted</label>
+      <externalViolence>true</externalViolence>
+      <battleWound>true</battleWound>
+      <deathMessage>{0} has been poisoned to death?</deathMessage>
+      <hediff>LTL_PoisonDarted</hediff>
+	  <hediffSkin>LTL_PoisonDarted</hediffSkin>
+	  <hediffSolid>LTL_PoisonDarted</hediffSolid>
+      <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+	  <harmsHealth>true</harmsHealth>
+	  <makesBlood>true</makesBlood>
+	  <impactSoundType>Bullet</impactSoundType>
+	  <armorCategory>Sharp</armorCategory>
+    </DamageDef>
+
+</Defs>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>TI - Less Than Lethal</name>
+  <author>JamieWx</author>
+  <url>http://theibex.net</url>
+  <targetVersion>0.16.1393</targetVersion>
+  <description>
+	Adds a tazer capable of incapacitating targets safely.
+  	Adds a stun baton, capable of incapacitating targets on contact.
+  </description>
+</ModMetaData>

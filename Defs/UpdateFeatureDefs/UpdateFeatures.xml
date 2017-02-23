@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HugsLib.UpdateFeatureDef Abstract="true" Name="TILTL">
+		<modNameReadable>TI - Less Than Lethal</modNameReadable>
+		<modIdentifier>LessThanLethal</modIdentifier>
+		<linkUrl>http://theibex.net</linkUrl>
+	</HugsLib.UpdateFeatureDef>
+
+	<HugsLib.UpdateFeatureDef ParentName="TILTL">
+		<defName>LTL 0.5</defName>
+		<assemblyVersion>1.0</assemblyVersion>
+		<content>Makes LTL Weapons REALLY Less Than Lethal.</content>
+	</HugsLib.UpdateFeatureDef>
+
+</Defs>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+	<ThingDef Name="BaseGrenadeProjectile" Abstract="True">
+    <category>Projectile</category>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Projectile_Explosive</thingClass>
+    <label>projectile</label>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>12</speed>
+      <flyOverhead>false</flyOverhead>
+    </projectile>
+  </ThingDef>
+
+
+  <!-- ==================== Frag grenade ========================== -->
+
+	<ThingDef ParentName="BaseWeapon">
+		<defName>Weapon_GrenadeTeargas</defName>
+		<label>teargas grenades</label>
+		<inspectorTabs>
+		  <li>ITab_Art</li>
+		</inspectorTabs>
+		<comps>
+		  <li>
+			<compClass>CompQuality</compClass>
+		  </li>
+		  <li Class="CompProperties_Art">
+			<nameMaker>ArtName_WeaponGun</nameMaker>
+			<descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+			<minQualityForArtistic>Excellent</minQualityForArtistic>
+		  </li>
+		</comps>
+		<recipeMaker>
+		  <workSpeedStat>SmithingSpeed</workSpeedStat>
+		  <workSkill>Crafting</workSkill>
+		  <effectWorking>Smith</effectWorking>
+		  <soundWorking>Recipe_Smith</soundWorking>
+		  <recipeUsers>
+			<li>TableMachining</li>
+		  </recipeUsers>
+		  <unfinishedThingDef>UnfinishedGrenades</unfinishedThingDef>
+		</recipeMaker>
+		<description>Teargas grenades reduce the vision and conciousness of everyone caught in the blast.</description>
+		<graphicData>
+			<texPath>Things/Item/TearGas/Grenades</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>InteractGrenade</soundInteract>
+		<techLevel>Industrial</techLevel>
+		<costStuffCount>43</costStuffCount>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<MarketValue>2000</MarketValue>
+			<Mass>1</Mass>
+			<RangedWeapon_Cooldown>2.66</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Steel>30</Steel>
+			<Component>6</Component>
+			<Plasteel>3</Plasteel>
+			<Uranium>4</Uranium>
+		</costList>
+		<weaponTags>
+		</weaponTags>
+		<thingCategories>
+			<li>LTLWeapons</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>teargas grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.0</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<projectileDef>Proj_GrenadeTeargas</projectileDef>
+			</li>
+		</verbs>
+		<smeltProducts>
+			<Steel>15</Steel>
+		</smeltProducts>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>Proj_GrenadeTeargas</defName>
+		<label>teargas grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Item/TearGas/Grenade</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius >3.2</explosionRadius >
+			<damageDef>LTL_TearGas</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionDelay>100</explosionDelay>
+			<preExplosionSpawnThingDef>FilthFireFoam</preExplosionSpawnThingDef>
+		</projectile>
+	</ThingDef>
+</ThingDefs>

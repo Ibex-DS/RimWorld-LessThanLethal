@@ -1,0 +1,6 @@
+D:\Steam\steamapps\common\RimWorld\Mods\Tazer\Assemblies\LessThanLethal.dll
+D:\Steam\steamapps\common\RimWorld\Mods\Tazer\Source\LessThanLethal\LessThanLethal\obj\Debug\LessThanLethal.csprojResolveAssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\Tazer\Source\LessThanLethal\LessThanLethal\obj\Debug\LessThanLethal.dll
+D:\Steam\steamapps\common\RimWorld\Mods\TI - Tazer\Source\LessThanLethal\LessThanLethal\obj\Debug\LessThanLethal.csprojResolveAssemblyReference.cache
+D:\Steam\steamapps\common\RimWorld\Mods\TI - Tazer\Source\LessThanLethal\LessThanLethal\obj\Debug\LessThanLethal.dll
+D:\Steam\steamapps\common\RimWorld\Mods\TI - Tazer\Assemblies\LessThanLethal.dll

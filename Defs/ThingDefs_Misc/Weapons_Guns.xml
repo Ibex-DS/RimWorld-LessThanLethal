@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+	<ThingDef Name="BaseGun" Abstract="True" ParentName="BaseWeapon">
+	  <techLevel>Industrial</techLevel>
+	  <smeltable>true</smeltable>
+	  <thingCategories>
+		<li>LTLWeapons</li>
+	  </thingCategories>
+	  <inspectorTabs>
+		<li>ITab_Art</li>
+	  </inspectorTabs>
+	  <comps>
+		<li>
+		  <compClass>CompQuality</compClass>
+		</li>
+		<li Class="CompProperties_Art">
+		  <nameMaker>ArtName_WeaponGun</nameMaker>
+		  <descriptionMaker>ArtDescription_WeaponGun</descriptionMaker>
+		  <minQualityForArtistic>Excellent</minQualityForArtistic>
+		</li>
+	  </comps>
+	</ThingDef>
+
+	<ThingDef Name="BaseMakeableGun" ParentName="BaseGun" Abstract="True">
+	  <recipeMaker>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<recipeUsers>
+		  <li>TableMachining</li>
+		</recipeUsers>
+		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+	  </recipeMaker>
+	</ThingDef>
+
+	<ThingDef Name="BaseHumanGun" ParentName="BaseGun" Abstract="True">
+	  <weaponTags>
+		<li>Gun</li>
+	  </weaponTags>
+	</ThingDef>
+
+	<ThingDef Name="BaseHumanMakeableGun" ParentName="BaseMakeableGun" Abstract="True">
+	  <weaponTags>
+		<li>Gun</li>
+	  </weaponTags>
+	</ThingDef>
+
+	<ThingDef Name="BaseBullet" Abstract="True">
+	  <category>Projectile</category>
+	  <tickerType>Normal</tickerType>
+	  <altitudeLayer>Projectile</altitudeLayer>
+	  <thingClass>Bullet</thingClass>
+	  <label>bullet</label>
+	  <useHitPoints>False</useHitPoints>
+	  <neverMultiSelect>True</neverMultiSelect>
+	  <graphicData>
+		<shaderType>Transparent</shaderType>
+	  </graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+	  <defName>Bullet_Tazer</defName>
+	  <label>tazer round</label>
+	  <graphicData>
+		<texPath>Things/Projectile/Bullet_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	  </graphicData>
+	  <projectile>
+		<flyOverhead>false</flyOverhead>
+		<damageDef>LTL_Tazed</damageDef>
+		<DamageAmountBase>100</DamageAmountBase>
+		<Speed>25</Speed>
+	  </projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+	  <defName>Gun_Tazer</defName>
+	  <label>tazer</label>
+	  <description>Tazer - Incapacitatates target temporarily.</description>
+	  <graphicData>
+		<texPath>Things/Item/Tazer/Tazer</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	  </graphicData>
+	  <soundInteract>InteractPistol</soundInteract>
+	  <statBases>
+		<WorkToMake>30000</WorkToMake>
+		<Mass>1.2</Mass>
+		<AccuracyTouch>0.8</AccuracyTouch>
+		<AccuracyShort>0.7</AccuracyShort>
+		<AccuracyMedium>0.52</AccuracyMedium>
+		<AccuracyLong>0.4</AccuracyLong>
+		<RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+	  </statBases>
+	  <costList>
+		<Steel>50</Steel>
+		<Component>8</Component>
+		<Plasteel>6</Plasteel>
+		<Gold>1</Gold>
+	  </costList>
+	  <verbs>
+		<li>
+		  <verbClass>Verb_Shoot</verbClass>
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <projectileDef>Bullet_Tazer</projectileDef>
+		  <warmupTime>1.0</warmupTime>
+		  <range>8</range>
+		  <soundCast>ShotPistol</soundCast>
+		  <soundCastTail>GunTail_Light</soundCastTail>
+		  <muzzleFlashScale>3</muzzleFlashScale>
+		</li>
+	  </verbs>
+	  <equippedStatOffsets>
+		<MoveSpeed>-0.8</MoveSpeed>
+	  </equippedStatOffsets>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseBullet">
+	  <defName>Bullet_PoisonDart</defName>
+	  <label>Poison Dart</label>
+	  <graphicData>
+		<texPath>Things/Projectile/Arrow_Small</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	  </graphicData>
+	  <projectile>
+		<flyOverhead>false</flyOverhead>
+		<damageDef>
+			<li>LTL_PoisonDart</li>
+		</damageDef>
+		<DamageAmountBase>1</DamageAmountBase>
+		<Speed>35</Speed>
+	  </projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+	  <techLevel>Neolithic</techLevel>
+	  <weaponTags>
+		<li>Neolithic</li>
+	  </weaponTags>
+	  <defName>Gun_BlowGun</defName>
+	  <label>Blow Pipe</label>
+	  <description>Blow Pipe - Poisons the target using henbane coated darts, expect incapacitation within a few moments.</description>
+	  <graphicData>
+		<texPath>Things/Item/BlowGun/BlowGun</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+	  </graphicData>
+	  <soundInteract>BowSmall</soundInteract>
+	  <statBases>
+		<WorkToMake>30000</WorkToMake>
+		<Mass>1.2</Mass>
+		<AccuracyTouch>0.7</AccuracyTouch>
+		<AccuracyShort>0.7</AccuracyShort>
+		<AccuracyMedium>0.6</AccuracyMedium>
+		<AccuracyLong>0.6</AccuracyLong>
+		<RangedWeapon_Cooldown>4.0</RangedWeapon_Cooldown>
+	  </statBases>
+	  <costList>
+		<Steel>5</Steel>
+		<WoodLog>50</WoodLog>
+		<Henbane>20</Henbane>
+	  </costList>
+	  <recipeMaker>
+		<workSpeedStat>SmithingSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+    		<li>FueledSmithy</li>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+		<effectWorking>Smelt</effectWorking>
+      	<unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+	  </recipeMaker>
+	  <verbs>
+		<li>
+		  <verbClass>Verb_Shoot</verbClass>
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <projectileDef>Bullet_PoisonDart</projectileDef>
+		  <warmupTime>2.5</warmupTime>
+		  <range>12</range>
+		  <soundCast>BowSmall</soundCast>
+		</li>
+	  </verbs>
+	  <equippedStatOffsets>
+		<MoveSpeed>-0.1</MoveSpeed>
+	  </equippedStatOffsets>
+	</ThingDef>
+</ThingDefs>

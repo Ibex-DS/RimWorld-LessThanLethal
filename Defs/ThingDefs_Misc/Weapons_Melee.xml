@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingDefs>
+
+  <ThingDef Name="BaseMeleeWeapon" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Industrial</techLevel>
+		<smeltable>true</smeltable>
+		<weaponTags>
+      <li>Melee</li>
+    </weaponTags>
+    <thingCategories>
+      <li>LTLWeapons</li>
+    </thingCategories>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>ArtName_WeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <recipeMaker>
+      <workSpeedStat>SmithingSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+	  <recipeUsers>
+        <li>TableMachining</li>
+      </recipeUsers>
+      <unfinishedThingDef>UnfinishedWeapon</unfinishedThingDef>
+    </recipeMaker>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon">
+	  <defName>MeleeWeapon_TazeBaton</defName>
+	  <label>Stun Baton</label>
+	  <description>A simplified contact stun version of the tazer. The weapon no longer has any range, but you're guaranteed not to miss!</description>
+	  <graphicData>
+		  <texPath>Things/Item/Baton/Baton</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+	  </graphicData>
+	  <techLevel>Industrial</techLevel>
+	  <weaponTags>
+		  <li>Melee</li>
+	  </weaponTags>
+	  <tradeability>Sellable</tradeability>
+	  <costStuffCount>1000</costStuffCount>
+	  <statBases>
+		  <WorkToMake>25000</WorkToMake>
+		  <Mass>5</Mass>
+		  <MeleeWeapon_DamageAmount>0</MeleeWeapon_DamageAmount>
+		  <DeteriorationRate>1.0</DeteriorationRate>
+		  <MeleeWeapon_Cooldown>4</MeleeWeapon_Cooldown>
+	  </statBases>
+	  <equippedAngleOffset>-65</equippedAngleOffset>
+	  <costList>
+		<Steel>50</Steel>
+  		<Component>10</Component>
+  		<Plasteel>2</Plasteel>
+  		<Gold>2</Gold>
+      </costList>
+	  <verbs>
+		  <li>
+			  <verbClass>Verb_MeleeAttack</verbClass>
+			  <hasStandardCommand>true</hasStandardCommand>
+			  <meleeDamageDef>LTL_TazedShort</meleeDamageDef>
+		  </li>
+	  </verbs>
+	  <equippedStatOffsets>
+		<MoveSpeed>-0.8</MoveSpeed>
+	  </equippedStatOffsets>
+  </ThingDef>
+</ThingDefs>

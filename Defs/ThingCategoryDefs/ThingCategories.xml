@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ThingCategoryDefs>
+
+	<ThingCategoryDef>
+      <defName>Root</defName>
+      <label>root</label>
+    </ThingCategoryDef>
+
+	<ThingCategoryDef>
+	  <defName>ltl</defName>
+	  <label>Less Than Lethal</label>
+	  <parent>Root</parent>
+	  <resourceReadoutRoot>true</resourceReadoutRoot>
+	  <iconPath>Things/Plant/LTL/Henbane</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>LTLWeapons</defName>
+		<label>Less Than Lethal</label>
+		<parent>Weapons</parent>
+		<iconPath>Things/Item/Tazer/Tazer</iconPath>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>LTLPlants</defName>
+		<label>Less Than Lethal</label>
+		<parent>PlantMatter</parent>
+		<iconPath>Things/Plant/LTL/Henbane</iconPath>
+	</ThingCategoryDef>
+</ThingCategoryDefs>

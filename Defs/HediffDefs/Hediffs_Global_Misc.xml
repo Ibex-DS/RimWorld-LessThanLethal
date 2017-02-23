@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef Name="DiseaseBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef Name="InjuryBase" Abstract="True">
+	  <hediffClass>Hediff_Injury</hediffClass>
+	  <defaultLabelColor>(0.8, 0.8, 0.35)</defaultLabelColor>
+	</HediffDef>
+
+	<HediffDef ParentName="DiseaseBase">
+		<defName>LTL_Tazed</defName>
+		<label>tazed</label>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>600</min>
+					<max>900</max>
+				</disappearsAfterTicks>
+			</li>
+  		</comps>
+  		<stages>
+			<li>
+			  	<capMods>
+					<li>
+					  	<capacity>Consciousness</capacity>
+					  	<setMax>0.1</setMax>
+					</li>
+			  	</capMods>
+			</li>
+	  	</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="DiseaseBase">
+		<defName>LTL_TazedShort</defName>
+		<label>tazed</label>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>300</min>
+					<max>450</max>
+				</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="DiseaseBase">
+		<defName>LTL_PoisonDarted</defName>
+		<label>Poison Darted</label>
+		<initialSeverity>0.001</initialSeverity>
+		<lethalSeverity>300</lethalSeverity>
+		<maxSeverity>500</maxSeverity>
+		<tendable>true</tendable>
+		<injuryProps>
+			<bleedRate>0.05</bleedRate>
+			<painPerSeverity>0.025</painPerSeverity>
+		</injuryProps>
+		<comps>
+			<li Class="HediffCompProperties_Immunizable">
+	        	<severityPerDayNotImmune>1000</severityPerDayNotImmune>
+	      	</li>
+			<li Class="HediffCompProperties_TendDuration">
+			  <labelTendedWell>Removed the dart</labelTendedWell>
+              <labelTendedWellInner>Removed the dart</labelTendedWellInner>
+        	  <labelSolidTendedWell>Removed the dart</labelSolidTendedWell>
+		      <tendDuration>32500</tendDuration>
+		      <tendAllAtOnce>true</tendAllAtOnce>
+		      <severityPerDayTended>-1350</severityPerDayTended>
+		    </li>
+  		</comps>
+  		<stages>
+			<li>
+	          <capMods>
+	            <li>
+	              <capacity>Moving</capacity>
+	              <offset>-0.1</offset>
+	            </li>
+	          </capMods>
+	        </li>
+			<li>
+			  <minSeverity>5</minSeverity>
+			  <capMods>
+				<li>
+				  <capacity>Moving</capacity>
+				  <offset>-0.25</offset>
+				</li>
+			  </capMods>
+			</li>
+			<li>
+			  <minSeverity>10</minSeverity>
+			  <capMods>
+				<li>
+				  <capacity>Moving</capacity>
+				  <offset>-0.5</offset>
+				</li>
+			  </capMods>
+			</li>
+			<li>
+			  <minSeverity>17</minSeverity>
+			  <capMods>
+				<li>
+				  <capacity>Moving</capacity>
+				  <offset>-0.8</offset>
+				</li>
+			  </capMods>
+			</li>
+			<li>
+			  <label>Post-Onset</label>
+			  <minSeverity>25</minSeverity>
+			  <capMods>
+				<li>
+				  <capacity>Consciousness</capacity>
+				  <setMax>0.01</setMax>
+			  </li>
+			  <li>
+				  <capacity>Moving</capacity>
+				  <setMax>0</setMax>
+				</li>
+			  </capMods>
+			</li>
+	  	</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="DiseaseBase">
+		<defName>LTL_TearGassed</defName>
+		<label>Tear Gassed</label>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>
+					<min>12000</min>
+					<max>12000</max>
+				</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>
