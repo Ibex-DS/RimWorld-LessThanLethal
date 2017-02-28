@@ -63,9 +63,8 @@
 		</statBases>
 		<costList>
 			<Steel>30</Steel>
-			<Component>6</Component>
-			<Plasteel>3</Plasteel>
-			<Uranium>4</Uranium>
+			<Component>1</Component>
+			<Chilli>4</Chilli>
 		</costList>
 		<weaponTags>
 		</weaponTags>

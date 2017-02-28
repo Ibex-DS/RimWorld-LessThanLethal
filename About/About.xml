@@ -7,5 +7,7 @@
   <description>
 	Adds a tazer capable of incapacitating targets safely.
   	Adds a stun baton, capable of incapacitating targets on contact.
+	Adds a blow gun, capable of poisoning targets, incapacitating them after a short period of time.
+	Adds henbane, a farmable plant used for the production of blow guns.
   </description>
 </ModMetaData>

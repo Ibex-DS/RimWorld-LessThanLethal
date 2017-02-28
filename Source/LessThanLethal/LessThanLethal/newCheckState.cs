@@ -60,7 +60,7 @@ namespace LTL
 				}
 				if (!self.Downed) {
 					if (shouldBeDowned) {
-						float num = (isNotLethalDam || isNotLethalDis) ? (LTL.likelihood_nonlethal/100) : ((!pawn.RaceProps.Animal) ? (LTL.likelihood_lethalHuman/100) : (LTL.likelihood_lethalAnimal/10));
+						float num = (isNotLethalDam || isNotLethalDis) ? ((float)LTL.likelihood_nonlethal/(float)100) : ((!pawn.RaceProps.Animal) ? ((float)LTL.likelihood_lethalHuman/(float)100) : ((float)LTL.likelihood_lethalAnimal/(float)10));
 						if (!self.forceIncap && (pawn.Faction == null || !pawn.Faction.IsPlayer) && !pawn.IsPrisonerOfColony && pawn.RaceProps.IsFlesh && Verse.Rand.Value < num) {
 							self.Kill(dinfo, null);
 							return;

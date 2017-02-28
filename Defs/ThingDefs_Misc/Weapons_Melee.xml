@@ -71,7 +71,7 @@
 		  </li>
 	  </verbs>
 	  <equippedStatOffsets>
-		<MoveSpeed>-0.8</MoveSpeed>
+		<MoveSpeed>-0.4</MoveSpeed>
 	  </equippedStatOffsets>
   </ThingDef>
 </ThingDefs>

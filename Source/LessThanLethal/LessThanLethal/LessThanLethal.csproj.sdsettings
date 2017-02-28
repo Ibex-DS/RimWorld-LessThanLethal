@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+  <Properties key="CSharpFormatting">
+    <SerializedObject key="NamespaceBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="ClassBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="InterfaceBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="StructBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="EnumBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="MethodBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="AnonymousMethodBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="ConstructorBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="DestructorBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="PropertyBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="PropertyGetBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="PropertySetBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="SimpleGetBlockFormatting">
+      <PropertyFormatting xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">AllowOneLine</PropertyFormatting>
+    </SerializedObject>
+    <SerializedObject key="SimpleSetBlockFormatting">
+      <PropertyFormatting xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">AllowOneLine</PropertyFormatting>
+    </SerializedObject>
+    <SerializedObject key="EventBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="EventAddBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="EventRemoveBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="AllowIfBlockInline">
+      <x:Boolean xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">True</x:Boolean>
+    </SerializedObject>
+    <SerializedObject key="StatementBraceStyle">
+      <BraceStyle xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">EndOfLine</BraceStyle>
+    </SerializedObject>
+    <SerializedObject key="AllowOneLinedArrayInitialziers">
+      <x:Boolean xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">False</x:Boolean>
+    </SerializedObject>
+    <SerializedObject key="ElseNewLinePlacement">
+      <NewLinePlacement xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">SameLine</NewLinePlacement>
+    </SerializedObject>
+    <SerializedObject key="ElseIfNewLinePlacement">
+      <NewLinePlacement xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">SameLine</NewLinePlacement>
+    </SerializedObject>
+    <SerializedObject key="CatchNewLinePlacement">
+      <NewLinePlacement xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">SameLine</NewLinePlacement>
+    </SerializedObject>
+    <SerializedObject key="FinallyNewLinePlacement">
+      <NewLinePlacement xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">SameLine</NewLinePlacement>
+    </SerializedObject>
+    <SerializedObject key="WhileNewLinePlacement">
+      <NewLinePlacement xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">SameLine</NewLinePlacement>
+    </SerializedObject>
+    <SerializedObject key="EmbeddedStatementPlacement">
+      <NewLinePlacement xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">SameLine</NewLinePlacement>
+    </SerializedObject>
+    <SerializedObject key="UsingPlacement">
+      <UsingPlacement xmlns="clr-namespace:ICSharpCode.NRefactory.CSharp;assembly=ICSharpCode.NRefactory.CSharp">TopOfFile</UsingPlacement>
+    </SerializedObject>
+  </Properties>
+</Properties>

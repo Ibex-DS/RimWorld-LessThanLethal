@@ -111,7 +111,7 @@
 		</li>
 	  </verbs>
 	  <equippedStatOffsets>
-		<MoveSpeed>-0.8</MoveSpeed>
+		<MoveSpeed>-0.4</MoveSpeed>
 	  </equippedStatOffsets>
 	</ThingDef>
 
@@ -181,7 +181,7 @@
 		</li>
 	  </verbs>
 	  <equippedStatOffsets>
-		<MoveSpeed>-0.1</MoveSpeed>
+		<MoveSpeed>-0.05</MoveSpeed>
 	  </equippedStatOffsets>
 	</ThingDef>
 </ThingDefs>
