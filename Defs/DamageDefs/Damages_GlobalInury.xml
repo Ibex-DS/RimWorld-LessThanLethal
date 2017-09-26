@@ -9,7 +9,6 @@
       <defName>LTL_Tazed</defName>
       <label>tazed</label>
       <externalViolence>false</externalViolence>
-      <battleWound>true</battleWound>
       <deathMessage>{0} has been tazed to death?</deathMessage>
       <hediff>LTL_Tazed</hediff>
 	  <hediffSkin>LTL_Tazed</hediffSkin>
@@ -23,7 +22,6 @@
       <defName>LTL_TazedShort</defName>
       <label>tazedshort</label>
       <externalViolence>false</externalViolence>
-      <battleWound>true</battleWound>
       <deathMessage>{0} has been tazed to death?</deathMessage>
       <hediff>LTL_TazedShort</hediff>
 	  <hediffSkin>LTL_TazedShort</hediffSkin>
@@ -37,7 +35,6 @@
 	  <defName>LTL_TearGas</defName>
 	  <label>Tear Gassed</label>
 	  <externalViolence>false</externalViolence>
-	  <battleWound>true</battleWound>
 	  <deathMessage>{0} has been gassed to death?</deathMessage>
 	  <hediff>LTL_TearGassed</hediff>
 	  <hediffSkin>LTL_TearGassed</hediffSkin>
@@ -52,7 +49,6 @@
       <defName>LTL_PoisonDart</defName>
       <label>Poison Darted</label>
       <externalViolence>true</externalViolence>
-      <battleWound>true</battleWound>
       <deathMessage>{0} has been poisoned to death?</deathMessage>
       <hediff>LTL_PoisonDarted</hediff>
 	  <hediffSkin>LTL_PoisonDarted</hediffSkin>
